@@ -117,27 +117,7 @@ developsio.Site = (function ($) {
                 attached.slideToggle('fast');
                 $(self).find('h1 i').toggleClass('fa-chevron-up fa-chevron-down');
             };
-        },
-	    // Get BOFH excuses
-	    getExcuse = function (data) {
-		    var rows = data.split('\r\n'),
-			    count = rows.length,
-			    rand = getRandomInt(0, count),
-			    excuse = rows[rand];
-		    return excuse.capFirst();
-	    },
-	    excuse = function (first) {
-		    var excuseDiv = $('#excuse');
-		    $.get('/excuse.txt', function (data) {
-			    if (!first) {
-				    excuseDiv.fadeOut(1000, function () {
-					    excuseDiv.text(getExcuse(data)).fadeIn(1000);
-				    });
-			    } else {
-				    excuseDiv.text(getExcuse(data)).fadeIn(1000);
-			    }
-		    });
-	    };
+        }
 
     /**
      * Executed on DOM ready within the scope of this module.
@@ -224,18 +204,6 @@ $(function () {
 				desc: "A very convenient way to handle the mundane aspects of console programming. Internal write buffer with character by character color support."
 			}
 		],
-		contentPanels = [
-			{
-				title: 'Utilities Used',
-				items: [
-					'Twitter Bootstrap',
-					'FontAwesome',
-					'Gulp / Elixir',
-					'Bower'
-				],
-				faIcon: 'fa-cogs'
-			}
-		],
 		develops = angular.module('develops', []);
 
 	develops.controller('socialController', function () {
@@ -245,18 +213,7 @@ $(function () {
 	develops.controller('projectController', function () {
 		this.projects = projects;
 	});
-
-	develops.directive('contentPanel', function () {
-		return {
-			restrict: 'EA',
-			templateUrl: 'assets/js/partials/contentPanel.html',
-			controller: function () {
-				this.panels = contentPanels;
-			},
-			controllerAs: 'panelsCtrl'
-		};
-	});
-
+    
 	develops.directive('projectsSection', function () {
 		return {
 			restrict: 'EA',

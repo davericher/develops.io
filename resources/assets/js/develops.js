@@ -47,18 +47,6 @@
 				desc: "A very convenient way to handle the mundane aspects of console programming. Internal write buffer with character by character color support."
 			}
 		],
-		contentPanels = [
-			{
-				title: 'Utilities Used',
-				items: [
-					'Twitter Bootstrap',
-					'FontAwesome',
-					'Gulp / Elixir',
-					'Bower'
-				],
-				faIcon: 'fa-cogs'
-			}
-		],
 		develops = angular.module('develops', []);
 
 	develops.controller('socialController', function () {
@@ -68,18 +56,7 @@
 	develops.controller('projectController', function () {
 		this.projects = projects;
 	});
-
-	develops.directive('contentPanel', function () {
-		return {
-			restrict: 'EA',
-			templateUrl: 'assets/js/partials/contentPanel.html',
-			controller: function () {
-				this.panels = contentPanels;
-			},
-			controllerAs: 'panelsCtrl'
-		};
-	});
-
+    
 	develops.directive('projectsSection', function () {
 		return {
 			restrict: 'EA',

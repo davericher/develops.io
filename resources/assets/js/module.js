@@ -29,27 +29,7 @@ developsio.Site = (function ($) {
                 attached.slideToggle('fast');
                 $(self).find('h1 i').toggleClass('fa-chevron-up fa-chevron-down');
             };
-        },
-	    // Get BOFH excuses
-	    getExcuse = function (data) {
-		    var rows = data.split('\r\n'),
-			    count = rows.length,
-			    rand = getRandomInt(0, count),
-			    excuse = rows[rand];
-		    return excuse.capFirst();
-	    },
-	    excuse = function (first) {
-		    var excuseDiv = $('#excuse');
-		    $.get('/excuse.txt', function (data) {
-			    if (!first) {
-				    excuseDiv.fadeOut(1000, function () {
-					    excuseDiv.text(getExcuse(data)).fadeIn(1000);
-				    });
-			    } else {
-				    excuseDiv.text(getExcuse(data)).fadeIn(1000);
-			    }
-		    });
-	    };
+        }
 
     /**
      * Executed on DOM ready within the scope of this module.
@@ -64,12 +44,6 @@ developsio.Site = (function ($) {
         $('[id$=Switch]').each(function () {
             toggelSwtich(this);
         });
-
-	    //excuse(true);
-	    //setInterval( function () {
-		 //   excuse(false);
-	    //},10000);
-
     });
 
     // Return functions to make them accessible from outside.

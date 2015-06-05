@@ -1,3 +1,2 @@
-## Develops.io Website
-
-A playground for new things
+# Develops.io Website
+    A place to test things out

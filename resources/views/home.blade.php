@@ -39,7 +39,7 @@
                             feedback.
                         </div>
                         <div class="panel-footer center">
-                            <span id="excuse"> </span>
+                            <span>{{ Inspiring::quote() }}</span>
                         </div>
                     </div>
                 </div>

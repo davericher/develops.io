@@ -29,8 +29,7 @@ elixir(function (mix) {
         'resources/assets/bower/bootstrap/fonts', 'public/fonts'
     ).copy(
         'resources/assets/bower/components-font-awesome/fonts', 'public/css/fonts'
-    ).copy('resources/excuse.txt','public/excuse.txt')
-        .uglify()
+    ).uglify()
         .version([
             'js/custom.min.js',
             'js/vendor.min.js'

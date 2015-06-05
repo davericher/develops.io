@@ -9896,15 +9896,6 @@ body {
   padding-top: 20px;
   margin-bottom: 20px;
 }
-#excuse {
-  font-style: italic;
-}
-#excuse:before {
-  content: '"';
-}
-#excuse:after {
-  content: '" -- BOFH';
-}
 @page {
   size: auto;
   margin: 2cm 1cm;
