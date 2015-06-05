@@ -1,0 +1,25 @@
+// Social buttons bar
+#soc {
+    //Variables
+    @IconMargin: 5px;
+    @FontColor: lighten(@gray-base, 90%);
+    //Init
+    .center;
+    padding-bottom: 10px;
+    //Styles
+    p {
+        margin: 0;
+        color: @FontColor;
+        &:before, &:after {
+            content: "-";
+            color: darken(@FontColor, 30%);
+        }
+    }
+    a {
+        display: inline-block;
+        margin-right: @IconMargin;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

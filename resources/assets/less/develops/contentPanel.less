@@ -1,0 +1,48 @@
+/*
+ * Content Panel
+ */
+
+.contentPanel {
+    @PrimeColor: #000;
+    @TextColor: lighten(@gray-base, 90%);
+    color: @TextColor;
+    .panel {
+        background-color: fade(@PrimeColor, 30%);
+        border: none;
+        .blockShadow;
+    }
+    .panel-heading,
+    .panel-footer {
+        .center;
+        padding: 5px;
+        color: @TextColor;
+    }
+    .panel-footer {
+        background-color: fade(@PrimeColor, 20%);
+        color: fade(@gray-lighter, 85%);
+        text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.7);
+    }
+    .panel-heading {
+        background-color: fade(@PrimeColor, 50%);
+        border: 1px solid top;
+        border-color: white;
+    }
+    .panel-body {}
+    .list-group-item {
+        background-color: transparent;
+        a {
+            text-align: left;
+            display: block;
+        }
+    }
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+}
+
+.loginPanel {
+  .contentPanel;
+  .center-block;
+  width:640px;
+}

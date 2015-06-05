@@ -1,0 +1,14 @@
+<div class="contentPanel">
+	<div class="panel">
+		<div class="panel-heading">
+			{{ panelsCtrl.panels[0].title }}
+		</div>
+		<!-- List group -->
+		<ul class="list-group" data-ng-repeat="item in panelsCtrl.panels[0].items">
+			<li class="list-group-item">{{item}}</li>
+		</ul>
+		<div class="panel-footer center">
+			<i class="fa {{ panelsCtrl.panels[0].faIcon }}"></i>
+		</div>
+	</div>
+</div>

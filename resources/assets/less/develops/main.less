@@ -1,0 +1,40 @@
+// Primary background gradient color
+html {
+  background: no-repeat fixed;
+}
+
+// Override body color to transparent
+body {
+    background: -webkit-linear-gradient(45deg, hsla(252, 100%, 44%, 1) 0%, hsla(252, 100%, 44%, 0) 70%), -webkit-linear-gradient(315deg, hsla(240, 93%, 42%, 1) 10%, hsla(240, 93%, 42%, 0) 80%), -webkit-linear-gradient(225deg, hsla(247, 93%, 49%, 1) 10%, hsla(247, 93%, 49%, 0) 80%), -webkit-linear-gradient(135deg, hsla(7, 92%, 42%, 1) 100%, hsla(7, 92%, 42%, 0) 70%);
+    background: linear-gradient(45deg, hsla(252, 100%, 44%, 1) 0%, hsla(252, 100%, 44%, 0) 70%), linear-gradient(135deg, hsla(240, 93%, 42%, 1) 10%, hsla(240, 93%, 42%, 0) 80%), linear-gradient(225deg, hsla(247, 93%, 49%, 1) 10%, hsla(247, 93%, 49%, 0) 80%), linear-gradient(315deg, hsla(7, 92%, 42%, 1) 100%, hsla(7, 92%, 42%, 0) 70%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+// Text centering
+.center {
+    text-align: center;
+}
+
+// Center responsive images
+.img-responsive.img-center {
+    .center-block;
+}
+
+.projectIcon {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+#excuse {
+  font-style: italic;
+  &:before {
+	content: '"';
+  }
+  &:after {
+	content: '" -- BOFH';
+  }
+}

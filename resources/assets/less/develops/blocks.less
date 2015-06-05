@@ -1,0 +1,28 @@
+/*
+ * Block level elements such has kbd, code
+ *  */
+
+.block {
+    display: block;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.blockShadow {
+    .box-shadow(6px 6px 14px -4px rgba(0, 0, 0, 0.75));
+}
+
+
+
+kbd {
+    .center;
+    .block;
+    .blockShadow;
+}
+
+code {
+    text-align: left;
+    .block;
+    .blockShadow;
+}

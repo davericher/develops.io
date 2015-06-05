@@ -1,0 +1,8 @@
+/vendor
+/node_modules
+/assets/bower/*
+/public/css/fonts/*
+.env
+.idea
+
+

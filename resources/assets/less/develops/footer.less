@@ -1,0 +1,51 @@
+//
+// Footer
+// --------------------------------------------------
+// Custom footer styles
+// Local variables
+//
+// Which are meant to be used only in this module. »Global« variables are stored
+// in /assets/less/develops/variables.less
+@mm_footer-height: 90px;
+@mm_footer-bg: darken(@prime-alpha,
+90%);
+// Local mixins
+//
+// Which are meant to be used only in this module. »Global« variables are stored
+// in /assets/less/develops/mixins.less
+// Called in scaffolding.less
+.mm_footer-htmlProps() {
+    position: relative;
+    min-height: 100%;
+}
+
+// Called in scaffolding.less
+.mm_footer-bodyProps() {
+    // Margin bottom by footer height
+    margin-bottom: @mm_footer-height;
+}
+
+// Styles
+//
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 15px;
+    // Set the fixed height of the footer here
+    height: @mm_footer-height;
+    background-color: @mm_footer-bg;
+    > .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .footer-text {
+        margin: 25px 0;
+        text-align: center;
+        font-size: 12px;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    a {
+        color: white;
+    }
+}
