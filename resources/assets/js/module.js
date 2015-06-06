@@ -15,48 +15,35 @@
 var developsio = window.developsio || {};
 
 
-developsio.Site = (function ($) {
+developsio.Site = function ($) {
     'use strict';
 
-    var idFromVar = function (id) {
-            return $('#' + id);
-        },
+    var idFromVar = (id) => $('#' + id),
+
 	    // Handle Switches
-        toggelSwtich = function (self) {
+        toggelSwtich =  (self) => {
             $(self).find('h1').css('cursor', 'pointer');
-            self.onclick = function () {
+            self.onclick =  ()  => {
                 var attached = idFromVar($(self).data('attached'));
                 attached.slideToggle('fast');
                 $(self).find('h1 i').toggleClass('fa-chevron-up fa-chevron-down');
             };
-        }
+        };
 
     /**
      * Executed on DOM ready within the scope of this module.
      * @event
      */
-    $(function () {
+    $( () => {
         // Page load transitions
         $('body').hide().fadeIn(1000); // Fade in the page
         $("#soc").hide().fadeIn(2000); // Fade in the social bar
 
         // Build the switch handlers
-        $('[id$=Switch]').each(function () {
-            toggelSwtich(this);
-        });
+        $('[id$=Switch]').each( (key,value) => toggelSwtich(value));
     });
 
     // Return functions to make them accessible from outside.
     return {};
 
-}(jQuery));
-
-
-/**
- * Executed on DOM ready within the global scope.
- * @event
- */
-$(function () {
-    'use strict';
-	return;
-});
+}(jQuery);

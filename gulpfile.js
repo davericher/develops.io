@@ -1,4 +1,5 @@
 var elixir = require('laravel-elixir');
+
 require('laravel-elixir-uglify');
 require('laravel-elixir-clean');
 /*
@@ -13,25 +14,41 @@ require('laravel-elixir-clean');
  */
 
 elixir(function (mix) {
-    mix.clean().less('app.less').scripts([
-        'jquery/dist/jquery.js',
-        'bootstrap/dist/js/bootstrap.js',
-        'angular/angular.js'
-    ], 'public/js/vendor.js', 'resources/assets/bower').
+    mix.
+        clean().
+        less('app.less').
+        scripts([
+            'jquery/dist/jquery.js',
+            'bootstrap/dist/js/bootstrap.js',
+            'angular/angular.js'
+        ],
+            'public/js/vendor.js',
+            'resources/assets/bower'
+        ).
         scripts([
             'base.js',
             'module.js',
             'develops.js'
         ],
-        'public/js/custom.js', 'resources/assets/js')
-        .copy('resources/assets/js/partials', 'public/js/partials')
+            'resources/assets/js/custom.js',
+            'resources/assets/js'
+        )
         .copy(
-        'resources/assets/bower/bootstrap/fonts', 'public/fonts'
-    ).copy(
-        'resources/assets/bower/components-font-awesome/fonts', 'public/css/fonts'
-    ).uglify()
-        .version([
-            'js/custom.min.js',
+            'resources/assets/js/partials',
+            'public/js/partials'
+        )
+        .copy(
+            'resources/assets/bower/bootstrap/fonts',
+            'public/fonts'
+        ).
+        copy(
+            'resources/assets/bower/components-font-awesome/fonts',
+            'public/css/fonts'
+        ).
+        browserify('custom.js').
+        uglify().
+        version([
+            'js/bundle.min.js',
             'js/vendor.min.js'
         ]);
 });
