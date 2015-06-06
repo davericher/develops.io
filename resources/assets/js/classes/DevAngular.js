@@ -6,22 +6,32 @@ export default class DevAngular {
         var develops = angular.module('develops', []);
 
         // Social Links
-        develops.controller('socialController', ['$http', function ($http) {
+        develops.factory('socialFactory', ['$http', function ($http) {
+            return $http.get('/socialLinks');
+        }]);
+
+        develops.controller('socialController', ['socialFactory', function (socialFactory) {
             var self = this;
             self.socialLinks = [];
-            $http.get('/socialLinks').then( function (result) {
-                self.socialLinks = result.data;
+            socialFactory.then( function(results) {
+                self.socialLinks = results.data;
             });
         }]);
 
         // Projects
-        develops.controller('projectController', ['$http', function ($http) {
+        develops.factory('projectFactory',['$http', function( $http ) {
+            return $http.get('/projects');
+        }]);
+
+        develops.controller('projectController', ['projectFactory', function (projectFactory) {
             var self = this;
             self.projects = [];
-            $http.get('/projects').then( function (result) {
-                    self.projects = result.data;
+            projectFactory.then( function(results) {
+                self.projects = results.data;
             });
-        }]);
+        }])
+
+
     }
 }
 

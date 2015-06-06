@@ -27,8 +27,8 @@
 
 <!-->
 <!-- Scripts -->
-
-<script src="{{elixir('js/bundle.min.js')}}"></script>
+<script src="{{elixir('js/bundle.js')}}"></script>
+{{--<script src="{{elixir('js/bundle.min.js')}}"></script>--}}
 <!-- External scripts (eg. analytics) should be placed here -->
 @include('partials/_analytics')
 

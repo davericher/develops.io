@@ -31,8 +31,10 @@ elixir(function (mix) {
             'public/css/fonts'
         ).
         browserify('app.js').
-        uglify().
+        // Turned off for development
+        //uglify().
         version([
-            'js/bundle.min.js'
+            'js/bundle.js'
+            //'js/bundle.min.js'
         ]);
 });

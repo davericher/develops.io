@@ -147,7 +147,6 @@
                                     <p>
                                         @{{project.desc}}
                                     </p>
-
                                 </div>
                             </div>
                         </div>
