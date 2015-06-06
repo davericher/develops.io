@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "angular": "^1.3.16",
+    "jquery": "^2.1.4",
     "laravel-elixir-clean": "^0.1.1",
     "laravel-elixir-uglify": "^1.0.3"
   }
