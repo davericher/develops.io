@@ -16,23 +16,7 @@ require('laravel-elixir-clean');
 elixir(function (mix) {
     mix.
         clean().
-        less('app.less').
-        scripts([
-            'jquery/dist/jquery.js',
-            'bootstrap/dist/js/bootstrap.js',
-            'angular/angular.js'
-        ],
-            'public/js/vendor.js',
-            'resources/assets/bower'
-        ).
-        scripts([
-            'base.js',
-            'module.js',
-            'develops.js'
-        ],
-            'resources/assets/js/custom.js',
-            'resources/assets/js'
-        )
+        less('app.less')
         .copy(
             'resources/assets/js/partials',
             'public/js/partials'
@@ -45,10 +29,9 @@ elixir(function (mix) {
             'resources/assets/bower/components-font-awesome/fonts',
             'public/css/fonts'
         ).
-        browserify('custom.js').
+        browserify('app.js').
         uglify().
         version([
-            'js/bundle.min.js',
-            'js/vendor.min.js'
+            'js/bundle.min.js'
         ]);
 });

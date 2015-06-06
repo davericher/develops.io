@@ -3,6 +3,7 @@
 /assets/bower/*
 /public/css/*
 /public/js/*
+public/build/*
 .env
 .idea
 _ide_helper.php

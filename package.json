@@ -5,6 +5,7 @@
     "laravel-elixir": "*"
   },
   "dependencies": {
+    "angular": "^1.3.16",
     "laravel-elixir-clean": "^0.1.1",
     "laravel-elixir-uglify": "^1.0.3"
   }
