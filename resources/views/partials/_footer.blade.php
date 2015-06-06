@@ -6,7 +6,7 @@
                 <p>
                     David J Richer
                 </p>
-                <a data-ng-repeat="link in social.links" target="_blank" href="@{{link.href}}"
+                <a data-ng-repeat="link in social.socialLinks" target="_blank" href="@{{link.href}}"
                    class="btn btn-sm btn-social-icon @{{link.btnStyle}}">
                     <i class="fa @{{link.faStyle}} "></i>
                 </a>

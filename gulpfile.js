@@ -17,10 +17,11 @@ elixir(function (mix) {
     mix.
         clean().
         less('app.less')
-        .copy(
-            'resources/assets/js/partials',
-            'public/js/partials'
-        )
+        // TODO: Implement when partials are needed
+        //.copy(
+        //    'resources/assets/js/partials',
+        //    'public/js/partials'
+        //)
         .copy(
             'resources/assets/bower/bootstrap/fonts',
             'public/fonts'

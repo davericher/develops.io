@@ -1,5 +1,5 @@
 /* Initialize the site */
-import DevSite from './DevSite.js';
-import DevAngular from './DevAngular.js';
+import DevSite from './classes/DevSite';
+import DevAngular from './classes/DevAngular';
 new DevSite();
 new DevAngular();
