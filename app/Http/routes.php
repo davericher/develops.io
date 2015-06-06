@@ -33,13 +33,14 @@ Route::get('projects', function () {
     ]);
 });
 
+
 Route::get('socialLinks', function () {
-    return response()->json([
+    return response([
         [
-            'href' => 'http://www.facebook.com/davericher',
-            'btnStyle' => 'btn-facebook',
-            'faStyle' => 'fa-facebook',
-            'desc' => 'Facebook'
+        'href' => 'http://www.facebook.com/davericher',
+        'btnStyle' => 'btn-facebook',
+        'faStyle' => 'fa-facebook',
+        'desc' => 'Facebook'
         ],
         [
             'href' => 'https://twitter.com/DavidJRicher',
@@ -71,5 +72,8 @@ Route::get('socialLinks', function () {
             'faStyle' => 'fa-linkedin',
             'desc' => 'LinkedIn'
         ]
-    ]);
+    ],
+        200,
+        ['Access-Control-Allow-Origin' => '*']
+    );
 });
