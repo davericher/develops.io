@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5f4af63f5fda67250a14d22bfd5ffdc1",
+    "hash": "4ef6a66dd3e1795caa6057150d583cbf",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -435,12 +435,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "c8ade4de42e8cdb83c3cbffb307a6c4f81e81994"
+                "reference": "2d3b48101b3e683a2845fa399aca43af22754aba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/c8ade4de42e8cdb83c3cbffb307a6c4f81e81994",
-                "reference": "c8ade4de42e8cdb83c3cbffb307a6c4f81e81994",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/2d3b48101b3e683a2845fa399aca43af22754aba",
+                "reference": "2d3b48101b3e683a2845fa399aca43af22754aba",
                 "shasum": ""
             },
             "require": {
@@ -555,7 +555,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-06-04 21:23:09"
+            "time": "2015-06-05 19:24:41"
         },
         {
             "name": "league/flysystem",
@@ -1906,6 +1906,61 @@
                 "environment"
             ],
             "time": "2015-05-30 15:59:26"
+        },
+        {
+            "name": "watson/validating",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dwightwatson/validating.git",
+                "reference": "c32912f760b456c043657951683ed6c468ab83e7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dwightwatson/validating/zipball/c32912f760b456c043657951683ed6c468ab83e7",
+                "reference": "c32912f760b456c043657951683ed6c468ab83e7",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "5.0.*|5.1.*",
+                "illuminate/database": "5.0.*|5.1.*",
+                "illuminate/events": "5.0.*|5.1.*",
+                "illuminate/support": "5.0.*|5.1.*",
+                "illuminate/validation": "5.0.*|5.1.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Watson\\Validating\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dwight Watson",
+                    "email": "dwight@studiousapp.com"
+                }
+            ],
+            "description": "Eloquent model validating trait.",
+            "keywords": [
+                "eloquent",
+                "laravel",
+                "validation"
+            ],
+            "time": "2015-06-03 02:25:38"
         }
     ],
     "packages-dev": [
@@ -2545,16 +2600,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.7.0",
+            "version": "4.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "c2241b8d3381be3e4c6125ae347687d59f286784"
+                "reference": "bdd15c9ec6e16a307398d5385b3445673608e805"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c2241b8d3381be3e4c6125ae347687d59f286784",
-                "reference": "c2241b8d3381be3e4c6125ae347687d59f286784",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/bdd15c9ec6e16a307398d5385b3445673608e805",
+                "reference": "bdd15c9ec6e16a307398d5385b3445673608e805",
                 "shasum": ""
             },
             "require": {
@@ -2613,7 +2668,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-06-05 04:14:02"
+            "time": "2015-06-05 13:25:13"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -3093,9 +3148,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "barryvdh/laravel-ide-helper": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],

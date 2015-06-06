@@ -25,20 +25,12 @@
 @include('partials/_footer')
 <!-- end: footer -->
 
-
+<!-->
 <!-- Scripts -->
-<script src="{{elixir('js/vendor.min.js')}}"></script>
-<script src="{{elixir('js/custom.min.js')}}"></script>
 
-
+<script src="{{elixir('js/bundle.min.js')}}"></script>
 <!-- External scripts (eg. analytics) should be placed here -->
 @include('partials/_analytics')
 
 </body>
 </html>
-
-
-
-{{--<ul class="nav navbar-nav navbar-right">--}}
-
-{{--</ul>--}}
