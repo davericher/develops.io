@@ -27,8 +27,12 @@
 
 <!-->
 <!-- Scripts -->
-<script src="{{elixir('js/bundle.js')}}"></script>
-{{--<script src="{{elixir('js/bundle.min.js')}}"></script>--}}
+@if (App::environment('production'))
+    <script src="{{elixir('js/bundle.min.js')}}"></script>
+@else
+    <script src="{{elixir('js/bundle.js')}}"></script>
+@endif
+
 <!-- External scripts (eg. analytics) should be placed here -->
 @include('partials/_analytics')
 

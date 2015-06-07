@@ -7,7 +7,7 @@ export default class DevAngular {
 
         // Social Links
         develops.factory('socialFactory', ['$http', function ($http) {
-            return $http.get('/socialLinks');
+            return $http.get('/api/social');
         }]);
 
         develops.controller('socialController', ['socialFactory', function (socialFactory) {
@@ -20,7 +20,7 @@ export default class DevAngular {
 
         // Projects
         develops.factory('projectFactory',['$http', function( $http ) {
-            return $http.get('/projects');
+            return $http.get('/api/projects');
         }]);
 
         develops.controller('projectController', ['projectFactory', function (projectFactory) {

@@ -12,29 +12,36 @@ require('laravel-elixir-clean');
  | file for our application, as well as publishing vendor resources.
  |
  */
+elixir( function (mix) {
+    "use strict";
+    mix.clean(); // Clean Public Directory
+    mix.less('app.less'); // Compile Less
 
-elixir(function (mix) {
-    mix.
-        clean().
-        less('app.less')
-        // TODO: Implement when partials are needed
-        //.copy(
-        //    'resources/assets/js/partials',
-        //    'public/js/partials'
-        //)
-        .copy(
-            'resources/assets/bower/bootstrap/fonts',
-            'public/fonts'
-        ).
-        copy(
-            'resources/assets/bower/components-font-awesome/fonts',
-            'public/css/fonts'
-        ).
-        browserify('app.js').
-        // Turned off for development
-        //uglify().
-        version([
-            'js/bundle.js'
-            //'js/bundle.min.js'
+    // Copy Bootstrap Fonts
+    mix.copy(
+        'resources/assets/bower/bootstrap/fonts',
+        'public/fonts'
+    );
+
+    // Copy Font awesome fonts
+    mix.copy(
+        'resources/assets/bower/components-font-awesome/fonts',
+        'public/css/fonts'
+    );
+
+    // Browserify App
+    mix.browserify('app.js');
+
+    // If In production, uglify
+    if (elixir.config.production) {
+        mix.uglify();
+        mix.version([
+            'js/bundle.min.js'
         ]);
+    } else {
+        mix.version([
+            'js/bundle.js'
+        ]);
+    }
 });
+
