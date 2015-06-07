@@ -1,9 +1,10 @@
 /vendor
 /node_modules
-/assets/bower/*
-/public/css/*
-/public/js/*
-public/build/*
+/resources/assets/bower
+/public/css
+/public/js
+/public/fonts
+/public/build
 .env
 .idea
 _ide_helper.php
