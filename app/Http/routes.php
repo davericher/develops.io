@@ -42,7 +42,7 @@ Route::group(['prefix' => 'api'], function () {
             [
                 'title' => 'Ottawa Swap and buy',
                 'faIcon' => 'fa-dollar',
-                'href' => 'https://ssab.ir0ny.com',
+                'href' => 'http://ssab.ir0ny.com',
                 'desc' => 'A functional ad posting website I made to learn MVC patterns in php using Laravel 4.'
             ],
             [
