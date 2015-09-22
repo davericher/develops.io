@@ -34,22 +34,22 @@ Route::group(['prefix' => 'api'], function () {
                 'desc' => 'A very convenient way to handle the mundane aspects of console programming. Internal write buffer with character by character color support.'
             ],
             [
-                'title' => 'HTML 5 Canvas Invaders from space game',
+                'title' => 'Invaders From Space',
                 'faIcon' => 'fa-space-shuttle',
                 'href' => 'http://invaders.ir0ny.com',
-                'desc' => 'A HTML 5 / Javascript / Canvas clone of Space Invaders.'
+                'desc' => 'A clone of the popular retro Space Invaders game. Designed using HTML5 / CSS3 / JavaScript / Canvas / Local Storage. Compatible with Google Chrome..'
             ],
             [
                 'title' => 'My Market Ottawa',
                 'faIcon' => 'fa-dollar',
                 'href' => 'http://ssab.ir0ny.com',
-                'desc' => 'A functional ad posting website I made to learn MVC patterns in php using Laravel 4.'
+                'desc' => ' A functional responsive first ad posting website designed using Laravel / Bootstrap / Mysql. Used to learn restful web development, MVC methodologies / modern design patterns.'
             ],
             [
-                'title' => 'Fallout the Node.JS IRC Bot Framework',
+                'title' => 'Pipboy 9000 the Node.JS IRC Bot Framework',
                 'faIcon' => 'fa-android',
                 'href' => 'https://github.com/ir0ny1/FallOut4Bot',
-                'desc' => 'A Node.Js IRC bot framework I build to learn Node.JS, Async, and non blocking eventing driven design.'
+                'desc' => 'A Node.js IRC bot framework that will pull its self from github and update without downtime. Helpful in learning asynchronous programming methodologies.'
             ]
 
     ]);
@@ -57,12 +57,6 @@ Route::group(['prefix' => 'api'], function () {
     // Social
     Route::get('social', function () {
         return response([
-            [
-                'href' => 'http://www.facebook.com/davericher',
-                'btnStyle' => 'btn-facebook',
-                'faStyle' => 'fa-facebook',
-                'desc' => 'Facebook'
-            ],
             [
                 'href' => 'https://twitter.com/DavidJRicher',
                 'btnStyle' => 'btn-twitter',
@@ -82,7 +76,7 @@ Route::group(['prefix' => 'api'], function () {
                 'desc' => 'GitHub'
             ],
             [
-                'href' => 'mailto:dave@ir0ny.com',
+                'href' => 'mailto:dave@develops.io',
                 'btnStyle' => 'btn-microsoft',
                 'faStyle' => 'fa-windows',
                 'desc' => 'Email'
