@@ -40,7 +40,7 @@ Route::group(['prefix' => 'api'], function () {
                 'desc' => 'A HTML 5 / Javascript / Canvas clone of Space Invaders.'
             ],
             [
-                'title' => 'Ottawa Swap and buy',
+                'title' => 'My Market Ottawa',
                 'faIcon' => 'fa-dollar',
                 'href' => 'http://ssab.ir0ny.com',
                 'desc' => 'A functional ad posting website I made to learn MVC patterns in php using Laravel 4.'
