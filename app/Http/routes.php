@@ -37,7 +37,7 @@ Route::group(['prefix' => 'api'], function () {
                 'title' => 'Invaders From Space',
                 'faIcon' => 'fa-space-shuttle',
                 'href' => 'http://invaders.ir0ny.com',
-                'desc' => 'A clone of the popular retro Space Invaders game. Designed using HTML5 / CSS3 / JavaScript / Canvas / Local Storage. Compatible with Google Chrome..'
+                'desc' => 'A clone of the popular retro Space Invaders game. Designed using HTML5 / CSS3 / JavaScript / Canvas / Local Storage. Compatible with Google Chrome.'
             ],
             [
                 'title' => 'My Market Ottawa',
