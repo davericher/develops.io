@@ -35,7 +35,7 @@ Route::group(['prefix' => 'api'], function () {
             ],
             [
                 'title' => 'HTML 5 Canvas Invaders from space game',
-                'faIcon' => 'fa-spaceshuttle',
+                'faIcon' => 'fa-space-shuttle',
                 'href' => 'http://invaders.ir0ny.com',
                 'desc' => 'A HTML 5 / Javascript / Canvas clone of Space Invaders.'
             ],
@@ -44,7 +44,14 @@ Route::group(['prefix' => 'api'], function () {
                 'faIcon' => 'fa-dollar',
                 'href' => 'https://ssab.ir0ny.com',
                 'desc' => 'A functional ad posting website I made to learn MVC patterns in php using Laravel 4.'
+            ],
+            [
+                'title' => 'Fallout the Node.JS IRC Bot Framework',
+                'faIcon' => 'fa-android',
+                'href' => 'https://github.com/ir0ny1/FallOut4Bot',
+                'desc' => 'A Node.Js IRC bot framework I build to learn Node.JS, Async, and non blocking eventing driven design.'
             ]
+
     ]);
     });
     // Social
