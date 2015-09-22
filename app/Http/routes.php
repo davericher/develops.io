@@ -26,31 +26,26 @@ Route::controllers([
 Route::group(['prefix' => 'api'], function () {
     // Projects
     Route::get('projects', function () {
-        return response([
+        return response( [
             [
                 'title' => 'C# Console Framework',
                 'faIcon' => 'fa-code',
                 'href' => 'https://github.com/ir0ny1/ExtendedConsole',
                 'desc' => 'A very convenient way to handle the mundane aspects of console programming. Internal write buffer with character by character color support.'
-            ]
-        ],
-            [
-                [
-                    'title' => 'HTML 5 Canvas Invaders from space game',
-                    'faIcon' => 'fa-spaceshuttle',
-                    'href' => 'http://invaders.ir0ny.com',
-                    'desc' => 'A HTML 5 / Javascript / Canvas clone of Space Invaders.'
-                ]
             ],
             [
-                [
-                    'title' => 'Ottawa Swap and buy',
-                    'faIcon' => 'fa-dollar',
-                    'href' => 'https://ssab.ir0ny.com',
-                    'desc' => 'A functional ad posting website I made to learn MVC patterns in php using Laravel 4.'
-                ]
+                'title' => 'HTML 5 Canvas Invaders from space game',
+                'faIcon' => 'fa-spaceshuttle',
+                'href' => 'http://invaders.ir0ny.com',
+                'desc' => 'A HTML 5 / Javascript / Canvas clone of Space Invaders.'
+            ],
+            [
+                'title' => 'Ottawa Swap and buy',
+                'faIcon' => 'fa-dollar',
+                'href' => 'https://ssab.ir0ny.com',
+                'desc' => 'A functional ad posting website I made to learn MVC patterns in php using Laravel 4.'
             ]
-        );
+    ]);
     });
     // Social
     Route::get('social', function () {
