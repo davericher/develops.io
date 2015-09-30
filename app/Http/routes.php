@@ -17,34 +17,46 @@ Route::get('/', function () {
 Route::get('home', 'HomeController@index');
 
 Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
+    'auth' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController',
 ]);
-
 
 
 // Sample API
 Route::group(['prefix' => 'api'], function () {
     // Projects
     Route::get('projects', function () {
-        return response([
+        return response( [
             [
                 'title' => 'C# Console Framework',
                 'faIcon' => 'fa-code',
                 'href' => 'https://github.com/ir0ny1/ExtendedConsole',
                 'desc' => 'A very convenient way to handle the mundane aspects of console programming. Internal write buffer with character by character color support.'
+            ],
+            [
+                'title' => 'Invaders From Space',
+                'faIcon' => 'fa-space-shuttle',
+                'href' => 'http://invaders.ir0ny.com',
+                'desc' => 'A clone of the popular retro Space Invaders game. Designed using HTML5 / CSS3 / JavaScript / Canvas / Local Storage. Compatible with Google Chrome.'
+            ],
+            [
+                'title' => 'My Market Ottawa',
+                'faIcon' => 'fa-dollar',
+                'href' => 'http://ssab.ir0ny.com',
+                'desc' => ' A functional responsive first ad posting website designed using Laravel / Bootstrap / Mysql. Used to learn restful web development, MVC methodologies / modern design patterns.'
+            ],
+            [
+                'title' => 'Pipboy 9000 the Node.JS IRC Bot Framework',
+                'faIcon' => 'fa-android',
+                'href' => 'https://github.com/ir0ny1/FallOut4Bot',
+                'desc' => 'A Node.js IRC bot framework that will pull its self from github and update without downtime. Helpful in learning asynchronous programming methodologies.'
             ]
-        ]);
+
+    ]);
     });
     // Social
     Route::get('social', function () {
         return response([
-            [
-                'href' => 'http://www.facebook.com/davericher',
-                'btnStyle' => 'btn-facebook',
-                'faStyle' => 'fa-facebook',
-                'desc' => 'Facebook'
-            ],
             [
                 'href' => 'https://twitter.com/DavidJRicher',
                 'btnStyle' => 'btn-twitter',
@@ -64,7 +76,7 @@ Route::group(['prefix' => 'api'], function () {
                 'desc' => 'GitHub'
             ],
             [
-                'href' => 'mailto:dave@ir0ny.com',
+                'href' => 'mailto:dave@develops.io',
                 'btnStyle' => 'btn-microsoft',
                 'faStyle' => 'fa-windows',
                 'desc' => 'Email'
