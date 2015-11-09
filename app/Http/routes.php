@@ -50,10 +50,17 @@ Route::group(['prefix' => 'api'], function () {
                 'faIcon' => 'fa-android',
                 'href' => 'https://github.com/ir0ny1/FallOut4Bot',
                 'desc' => 'A Node.js IRC bot framework that will pull its self from github and update without downtime. Helpful in learning asynchronous programming methodologies.'
+            ],
+            [
+                'title' => 'PHP Form Validator',
+                'faIcon' => 'fa-check-square-o',
+                'href' => 'https://github.com/ir0ny1/validator',
+                'desc' => 'A php form validator that has no other dependices and provides a fluent validation.'
             ]
 
-    ]);
+    	]);
     });
+
     // Social
     Route::get('social', function () {
         return response([
