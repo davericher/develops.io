@@ -56,8 +56,13 @@ Route::group(['prefix' => 'api'], function () {
                 'faIcon' => 'fa-check-square-o',
                 'href' => 'https://github.com/ir0ny1/validator',
                 'desc' => 'A php form validator that has no other dependices and provides a fluent validation.'
+            ],
+            [
+                'title' => 'Widget General Goods',
+                'faIcon' => 'fa-gear',
+                'href' => 'https://github.com/ir0ny1/cst8256-FinalProject',
+                'desc' => 'A ASP.Net 4 MVC 5 project for school that demonstrates plenty of design patterns.'
             ]
-
     	]);
     });
 
