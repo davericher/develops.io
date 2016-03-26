@@ -30,7 +30,7 @@ Route::group(['prefix' => 'api'], function () {
             [
                 'title' => 'C# Console Framework',
                 'faIcon' => 'fa-code',
-                'href' => 'https://github.com/ir0ny1/ExtendedConsole',
+                'href' => 'https://github.com/davericher/ExtendedConsole',
                 'desc' => 'A very convenient way to handle the mundane aspects of console programming. Internal write buffer with character by character color support.'
             ],
             [
@@ -48,19 +48,19 @@ Route::group(['prefix' => 'api'], function () {
             [
                 'title' => 'Pipboy 9000 the Node.JS IRC Bot Framework',
                 'faIcon' => 'fa-android',
-                'href' => 'https://github.com/ir0ny1/FallOut4Bot',
+                'href' => 'https://github.com/davericher/FallOut4Bot',
                 'desc' => 'A Node.js IRC bot framework that will pull its self from github and update without downtime. Helpful in learning asynchronous programming methodologies.'
             ],
             [
                 'title' => 'PHP Form Validator',
                 'faIcon' => 'fa-check-square-o',
-                'href' => 'https://github.com/ir0ny1/validator',
+                'href' => 'https://github.com/davericher/validator',
                 'desc' => 'A php form validator that has no other dependices and provides a fluent validation.'
             ],
             [
                 'title' => 'Widget General Goods',
                 'faIcon' => 'fa-gear',
-                'href' => 'https://github.com/ir0ny1/cst8256-FinalProject',
+                'href' => 'https://github.com/davericher/cst8256-FinalProject',
                 'desc' => 'A ASP.Net 4 MVC 5 project for school that demonstrates plenty of design patterns.'
             ]
     	]);
