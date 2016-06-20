@@ -1,7 +1,7 @@
+// Readd clean and uglify
+
 var elixir = require('laravel-elixir');
 
-require('laravel-elixir-uglify');
-require('laravel-elixir-clean');
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -14,7 +14,6 @@ require('laravel-elixir-clean');
  */
 elixir( function (mix) {
     "use strict";
-    mix.clean(); // Clean Public Directory
     mix.less('app.less'); // Compile Less
 
     // Copy Bootstrap Fonts
@@ -32,16 +31,9 @@ elixir( function (mix) {
     // Browserify App
     mix.browserify('app.js');
 
-    // If In production, uglify
-    if (elixir.config.production) {
-        mix.uglify();
-        mix.version([
-            'js/bundle.min.js'
-        ]);
-    } else {
-        mix.version([
-            'js/bundle.js'
-        ]);
-    }
+
+    mix.version([
+            'js/app.js'
+    ]);
 });
 
