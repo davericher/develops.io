@@ -46,9 +46,9 @@ Route::group(['prefix' => 'api'], function () {
                 'desc' => ' A functional responsive first ad posting website designed using Laravel / Bootstrap / Mysql. Used to learn restful web development, MVC methodologies / modern design patterns.'
             ],
             [
-                'title' => 'Pipboy 9000 the Node.JS IRC Bot Framework',
+                'title' => 'MrNodeBot',
                 'faIcon' => 'fa-android',
-                'href' => 'https://github.com/davericher/FallOut4Bot',
+                'href' => 'https://github.com/funsocietyirc/MrNodeBot',
                 'desc' => 'A Node.js IRC bot framework that will pull its self from github and update without downtime. Helpful in learning asynchronous programming methodologies.'
             ],
             [
@@ -82,7 +82,7 @@ Route::group(['prefix' => 'api'], function () {
                 'desc' => 'Google Plus'
             ],
             [
-                'href' => 'https://github.com/ir0ny1',
+                'href' => 'https://github.com/davericher',
                 'btnStyle' => 'btn-github',
                 'faStyle' => 'fa-github',
                 'desc' => 'GitHub'
