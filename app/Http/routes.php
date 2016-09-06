@@ -62,6 +62,12 @@ Route::group(['prefix' => 'api'], function () {
                 'faIcon' => 'fa-gear',
                 'href' => 'https://github.com/davericher/cst8256-FinalProject',
                 'desc' => 'A ASP.Net 4 MVC 5 project for school that demonstrates plenty of design patterns.'
+            ],
+            [
+                'title' => 'FSociety: Mr. Robot fan site',
+                'faIcon' => 'fa-heart',
+                'href' => 'https://github.com/funsocietyirc/fsociety-website',
+                'desc' => 'Fan site made with Laravel 5.3'
             ]
     	]);
     });
