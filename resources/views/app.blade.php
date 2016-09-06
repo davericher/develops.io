@@ -11,7 +11,7 @@
 <![endif]-->
 
 <!-- begin: navbar -->
-@include('partials/_nav')
+{{--@include('partials/_nav')--}}
 <!-- end: navbar -->
 
 

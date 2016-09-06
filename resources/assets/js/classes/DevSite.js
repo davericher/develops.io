@@ -14,6 +14,7 @@ export default class DevSite {
         });
     }
 
+
     static idFromVar(id) {
         "use strict";
         return $('#' + id);
@@ -26,6 +27,7 @@ export default class DevSite {
             var attached = DevSite.idFromVar($(element).data('attached'));
             attached.slideToggle('fast');
             $(element).find('h1 i').toggleClass('fa-chevron-up fa-chevron-down');
-        }
+        };
+        element.onclick();
     }
 }
