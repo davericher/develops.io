@@ -8,8 +8,13 @@
     "laravel-elixir-clean": "*",
     "laravel-elixir-uglify": "*",
     "angular": "^1.4",
-    "jquery": "^2.1.4"
-
-  }
+    "jquery": "^2.1.4",
+    "snyk": "^1.105.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
 
