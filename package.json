@@ -8,7 +8,7 @@
     "laravel-elixir-clean": "*",
     "laravel-elixir-uglify": "*",
     "angular": "^1.4",
-    "jquery": "^2.1.4"
+    "jquery": "^3.5.0"
 
   }
 }
